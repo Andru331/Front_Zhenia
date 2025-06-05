@@ -24,6 +24,11 @@
          <Insets left="40.0" right="40.0" />
       </VBox.margin>
    </TextField>
+   <Label fx:id="errorMassege" textFill="RED">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
     <Button onAction="#onLogin" text="Войти" />
    <Button mnemonicParsing="false" onAction="#toRegistaration" text="Перейти к регистрации" />
 </VBox>

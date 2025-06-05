@@ -4,6 +4,7 @@ import com.example.front.App;
 import com.example.front.service.RegService;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
@@ -13,6 +14,9 @@ public class Registration {
 
     @FXML
     public ComboBox<String> myComboBox;
+    @FXML
+    public Label errrorMessage;
+
     @FXML
     public void initialize() {
         myComboBox.getItems().addAll("USER", "ADMIN");
@@ -27,7 +31,7 @@ public class Registration {
 
 
     @FXML
-    protected void Registration() throws IOException, InterruptedException {
+    protected void registration() throws IOException, InterruptedException {
         System.out.println(
                 regService.userAuth(login.getText(),password.getText(),fullname.getText(),myComboBox.getValue()));
         App.switchScene("authorization.fxml","Авторизация");

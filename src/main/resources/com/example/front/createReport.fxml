@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.controllers.CreateReport">
+   <children>
+      <Button layoutX="329.0" layoutY="14.0" mnemonicParsing="false" onAction="#yearReport" text="Создать отчёт за год" />
+      <Button layoutX="322.0" layoutY="49.0" mnemonicParsing="false" onAction="#monthReport" text="Создать отчёт за месяц" />
+      <TableView fx:id="reportTable" layoutY="100.0" prefHeight="200.0" prefWidth="788.0">
+        <columns>
+          <TableColumn fx:id="depoCodeCol" prefWidth="84.79998779296875" text="код депозита" />
+          <TableColumn fx:id="passportCol" prefWidth="65.60003662109375" text="Паспорт" />
+            <TableColumn fx:id="typeCol" prefWidth="84.800048828125" text="Тип депозита" />
+            <TableColumn fx:id="openDateCol" prefWidth="100.0" text="Дата открытия" />
+            <TableColumn fx:id="closeDateCol" prefWidth="104.0" text="Дата закрытия" />
+            <TableColumn fx:id="balanceCol" prefWidth="85.60000610351562" text="Баланс" />
+            <TableColumn fx:id="accruedCol" prefWidth="116.79998779296875" text="Итоговый баланс" />
+            <TableColumn fx:id="totalCol" prefWidth="146.39996337890625" text="Транзакции" />
+        </columns>
+      </TableView>
+      <Button layoutX="347.0" layoutY="336.0" mnemonicParsing="false" onAction="#toMenu" text="Назад в меню" />
+   </children>
+</AnchorPane>

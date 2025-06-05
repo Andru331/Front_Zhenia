@@ -28,4 +28,14 @@ public class MainPage {
     public void toEditUser() throws IOException {
         App.switchScene("editUser.fxml","Изменение пользователя");
     }
+
+    @FXML
+    public void toEditClient() throws IOException {
+        App.switchScene("editClient.fxml","Изменение пользователя");
+    }
+
+    @FXML
+    public void createReport() throws IOException {
+        App.switchScene("createReport.fxml","Создание отчёта");
+    }
 }

@@ -37,7 +37,15 @@
             <Insets top="10.0" />
          </VBox.margin>
       </ComboBox>
-      <Button mnemonicParsing="false" onAction="#Registration" prefHeight="26.0" prefWidth="110.0" text="Регистрация">
+      <Label fx:id="errrorMessage">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#registration" prefHeight="26.0" prefWidth="110.0" text="Регистрация">
          <VBox.margin>
             <Insets top="20.0" />
          </VBox.margin>
