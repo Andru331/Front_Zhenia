@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.controllers.EditUser">
+   <children>
+      <Label text="Изменение пользователя">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" promptText="Ваше текущее имя">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="newPassword" promptText="Новый пароль">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="newFullName" promptText="Новое полное имя">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="newUsername" promptText="Новое имя">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+      </TextField>
+      <ComboBox fx:id="newRole" prefHeight="26.0" prefWidth="535.0" promptText="Новая роль">
+         <VBox.margin>
+            <Insets left="40.0" right="40.0" top="10.0" />
+         </VBox.margin>
+      </ComboBox>
+      <Button mnemonicParsing="false" onAction="#coomitChanges" prefHeight="26.0" prefWidth="156.0" text="Сохранить изминения">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#toMain" prefHeight="26.0" prefWidth="156.0" text="Назад на главную">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

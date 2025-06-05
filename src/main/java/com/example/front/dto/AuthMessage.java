@@ -1,8 +1,8 @@
 package com.example.front.dto;
 
 public class AuthMessage {
-    private String token;
-    private String message;
+    private static String token;
+    private static String message;
 
     public AuthMessage() {
     }
@@ -12,7 +12,7 @@ public class AuthMessage {
     }
 
     public void setToken(String token) {
-        this.token = token;
+        AuthMessage.token = token;
     }
 
     public String getMessage() {
@@ -20,6 +20,6 @@ public class AuthMessage {
     }
 
     public void setMessage(String message) {
-        this.message = message;
+        AuthMessage.message = message;
     }
 }

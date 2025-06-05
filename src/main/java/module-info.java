@@ -12,6 +12,7 @@ module com.example.front {
     requires com.almasb.fxgl.all;
     requires java.net.http;
     requires com.fasterxml.jackson.databind;
+    requires java.sql;
 
     opens com.example.front to javafx.fxml;
     exports com.example.front;

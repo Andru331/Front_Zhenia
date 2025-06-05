@@ -26,9 +26,14 @@ public class LoginController {
     @FXML
     private void onLogin() throws IOException, InterruptedException {
         String response = regService.userAuth(usernameField.getText(),passwordField.getText());
-        System.out.println(response);
-        AuthMessage authMessage = objectMapper.readValue(response, AuthMessage.class);
-        System.out.println(authMessage.getToken());
 
+        AuthMessage authMessage = objectMapper.readValue(response, AuthMessage.class);
+        System.out.println(authMessage.getMessage());
+        if(authMessage.getMessage().equals("User could not be signed in!") ||
+        authMessage.getMessage().equals("Invalid username or password")) {
+            System.out.println("User could not be signed in!");
+            return;
+        }
+        App.switchScene("mainPage.fxml","Главная станица");
     }
 }
